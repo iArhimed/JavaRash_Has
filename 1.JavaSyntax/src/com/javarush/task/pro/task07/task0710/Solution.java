@@ -1,0 +1,23 @@
+package com.javarush.task.pro.task07.task0710;
+
+/* 
+Массив значений
+*/
+
+import java.util.Arrays;
+
+public class Solution {
+    public static void main(String[] args) {
+        Integer[] array = new Integer[5];
+        fillArray(array, 3);
+        System.out.println(Arrays.toString(array));
+    }
+
+    public static void fillArray(Integer[] array, int value){
+        //напишите тут ваш код
+        int len = array.length;
+        for (int i = 0; i < len ; ++i) {
+            array[i] = value;
+        }
+    }
+}
